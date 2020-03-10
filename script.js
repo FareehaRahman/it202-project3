@@ -15,27 +15,16 @@ document.addEventListener("keyup", keysUp, false);
 
 
 function openWin() {
-    
-     
   myWindow = window.open("", "", "width=300, height=300, ");
   myWindow.document.write("<p>    HELLO!   TO PLAY THIS GAME YOU HAVE TO MOVE THE DUCK BACK AND FORTH TO FEED IT PROPERLY  </p>")
   myWindow.document.write("<p>    COLLECT AS MANY RED,BLUE, YELLOW FOOD AS YOU CAN,  </p>")
   myWindow.document.write("<p>    BUT BE CARE TO AVOID ALL THE OTHER FOOD COLORS!   </p>")
   myWindow.document.write("<p>     EACH LEVEL GETS TOUGHER AS YOU GO ALONG.    </p>")
   myWindow.document.write("<p> SO GOOD LUCK!     </p>")
-
-  
-  
-  
   myWindow.moveTo(500, 100);
   myWindow.focus();
 
 }
-
-
-
-
-
 
 // when key is pressed down, move
 function keysDown(e) {
@@ -164,7 +153,6 @@ function drawBlackBall() {
 
 
 var thumbImg = document.createElement('img');
-
 thumbImg.src = 'imageedit__8803707195.png';
 thumbImg.onload = function() {
     contxt.save();
@@ -181,19 +169,7 @@ thumbImg.onload = function() {
     contxt.closePath();
     contxt.restore();
 };
-// function drawPlayer(x,y) {
 
-// // draw player to canvas
-// 	contxt.beginPath();
-   
-// 	contxt.rect(player.x, player.y, 60,player.size)
-//     contxt.height = 150;
-// 	contxt.fillStyle = player.color;
-// 	contxt.fill();
-// 	contxt.closePath();
-  
-    
-// }
 
 // moves objects in play
 function playUpdate() {
